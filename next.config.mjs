@@ -10,6 +10,8 @@ const nextConfig = {
     images: {
         domains: ["encrypted-tbn0.gstatic.com"], // Добавьте домен хоста изображения
     },
+    output: "export",  // <=== enables static exports
+    basePath: "/sms-next",
 };
 
 export default nextConfig;
