@@ -1,0 +1,10 @@
+// app/words/words.module.scss
+
+.wordsSection {
+  height: calc(100vh - 92.5px); /* Full height minus header */
+  width: 100%;
+  background-color: var(--color-background); /* Use the common background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

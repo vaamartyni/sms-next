@@ -1,0 +1,45 @@
+/* app/contacts/page.module.scss */
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  height: calc(100vh - 150px);
+}
+
+.contact {
+  flex: 1 1 50%; /* Left side takes half the width */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact a {
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.map {
+  flex: 1 1 50%; /* Right side takes half the width */
+  position: relative;
+  background-color: var(--color-muted); /* Fallback background color */
+}

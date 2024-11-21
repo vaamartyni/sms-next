@@ -1,0 +1,80 @@
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background);
+  justify-content: space-between;
+}
+
+.ltr {
+  flex-direction: row; /* Изображение слева, контент справа */
+}
+
+.rtl {
+  flex-direction: row-reverse; /* Изображение справа, контент слева */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  align-items: flex-end;
+}
+
+.header {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--color-muted);
+  color: var(--color-text);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-hover);
+  }
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  position: relative;
+  width: 650px; /* Ширина контейнера */
+  height: 650px; /* Высота контейнера */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  object-fit: cover;
+}

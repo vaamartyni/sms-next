@@ -1,0 +1,14 @@
+// app/layout/footer.module.scss
+.footer {
+  background-color: #222; /* Фон футера */
+  color: white;
+  width: 100%; /* Растягиваем фон на всю ширину */
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1720px; /* Рабочая область */
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: start;
+}

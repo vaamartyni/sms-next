@@ -1,0 +1,14 @@
+// app/projects/page.module.scss
+.projectsSection {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  height: 800px;
+  width: 100%; /* Фон растягивается */
+}
+
+.container {
+  max-width: 1720px; /* Рабочая область */
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}

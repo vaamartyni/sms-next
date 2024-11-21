@@ -1,0 +1,92 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  background-color: var(--color-background); /* Основной фон */
+  gap: 100px;
+  height: calc(100vh - 93px);
+}
+
+.container {
+  max-width: 1720px; /* Ограничение ширины рабочей области */
+  margin: 0 auto; /* Центрирование */
+  width: 100%; /* Растягивание контейнера */
+  display: flex;
+  gap: 100px;
+}
+
+.wordCloud {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-text); /* Основной текст */
+  font-size: 16px;
+  line-height: 24px;
+  width: 650px;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-muted); /* Тонкая линия */
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--color-primary); /* Ключевой цвет */
+  font-weight: 700;
+  margin: 0;
+  height: 200px;
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-text); /* Основной текст */
+  margin-top: 0;
+}
+
+.button {
+  background-color: var(--color-primary); /* Основной цвет кнопки */
+  color: var(--color-background); /* Цвет текста кнопки */
+  border: 2px solid #000000; /* Черная рамка */
+  padding: 12px 48px;
+  font-size: 32px; /* Размер шрифта */
+  font-weight: 800; /* ExtraBold */
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 0 #000000; /* Drop-shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+  &:hover {
+    background-color: var(--color-hover); /* Темнее при наведении */
+    box-shadow: 6px 6px 0 #333333; /* Более мягкий эффект при наведении */
+  }
+}
+
+.dynamicText {
+  vertical-align: baseline; /* Aligns with the baseline of the static text */
+  border-right: 2px solid var(--color-primary); /* Опциональный эффект курсора */
+  animation: blink 0.7s steps(1) infinite; /* Добавляет мигающий курсор */
+  font-weight: 700;
+  color: var(--color-primary); /* Соответствие бренду */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

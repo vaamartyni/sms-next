@@ -1,0 +1,41 @@
+:root {
+  /* Light Blue Palette */
+  --color-primary: #2E76E2; /* Main primary color */
+  --color-hover: #145ECF; /* Hover color for primary */
+  --color-background: #FFFFFF; /* Background color */
+  --color-text: #2C2F33; /* Main text color */
+  --color-muted: #F0F0F0; /* Muted color for light elements */
+  --color-border: #000000; /* Border color */
+  --color-shadow: #000000; /* Default shadow */
+  --color-shadow-hover: #333333; /* Shadow on hover */
+
+  /* Overlay Colors */
+  --color-overlay-light-rgb: 255, 255, 255; /* Light overlay for glass backgrounds */
+  --color-overlay-dark-rgb: 0, 0, 0; /* Dark overlay for glass backgrounds */
+}
+
+[data-theme="dark-blue"] {
+  /* Dark Blue Palette */
+  --color-primary: #2d73e5; /* Main primary color */
+  --color-hover: #0D47A1; /* Darker hover color for primary */
+  --color-background: #121212; /* Dark background color */
+  --color-text: #E0E0E0; /* Light text color */
+  --color-muted: #1F1F1F; /* Muted color for dark elements */
+  --color-border: #FFFFFF; /* Light border for dark backgrounds */
+  --color-shadow: #626262; /* Shadow for dark mode */
+  --color-shadow-hover: #666666; /* Hover shadow for dark mode */
+
+  /* Overlay Colors */
+  --color-overlay-light-rgb: 0, 0, 0; /* Light overlay remains the same */
+  --color-overlay-dark-rgb: 0, 0, 0; /* Dark overlay remains the same */
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,81 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color-overlay-dark-rgb), 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  box-sizing: border-box;
+  background: var(--color-background); /* Modal background */
+  padding: 32px;
+  box-shadow: 6px 6px 0 var(--color-shadow); /* Drop-shadow */
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--color-text); /* Close button color */
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-text); /* Title text color */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input,
+.textarea {
+  padding: 12px;
+  border: 2px solid var(--color-border); /* Input border */
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0; /* Explicitly state no border radius */
+  resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-primary); /* Highlight border on focus */
+  outline: none; /* Remove default browser focus outline */
+  border-radius: 0; /* Ensure no rounding on focus */
+}
+
+.submitButton {
+  background-color: var(--color-primary); /* Submit button background */
+  color: var(--color-background); /* Submit button text color */
+  padding: 12px 20px;
+  border: 2px solid var(--color-border); /* Border color */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 0 var(--color-shadow); /* Button shadow */
+
+  &:hover {
+    background-color: var(--color-hover); /* Darker background on hover */
+    box-shadow: 6px 6px 0 var(--color-shadow-hover); /* Hover shadow */
+  }
+}

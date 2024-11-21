@@ -1,0 +1,27 @@
+.themeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+
+  &:hover .icon {
+    filter: drop-shadow(0px 0px 4px var(--color-primary));
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-text); /* Adjusts dynamically based on theme */
+  transition: fill 0.3s ease, transform 0.3s ease;
+
+  /* Add subtle rotation effect */
+  &:hover {
+    transform: rotate(15deg);
+  }
+}

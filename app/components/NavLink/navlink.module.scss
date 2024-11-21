@@ -1,0 +1,18 @@
+// components/navlink.module.scss
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-text); /* Text color for nav links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-hover); /* Hover effect for nav links */
+  }
+}

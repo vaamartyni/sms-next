@@ -1,0 +1,30 @@
+.darkSection {
+  background-color: var(--color-primary); /* Темный фон */
+  color: var(--color-background); /* Белый текст на темном фоне */
+  padding: 50px 0;
+  height: 700px;
+  width: 100%; /* Фон растягивается на всю ширину экрана */
+}
+
+.layoutSection {
+  height: fit-content;
+  background-color: var(--color-background); /* Белый фон */
+  padding: 50px 0;
+  width: 100%; /* Фон растягивается */
+}
+
+.lightSection {
+  background-color: var(--color-muted); /* Светлый фон */
+  color: var(--color-text); /* Темный текст на светлом фоне */
+  padding: 50px 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1720px; /* Рабочая область */
+  margin: 0 auto;
+  padding: 0 16px; /* Отступы для мобильных устройств */
+  gap: 80px;
+}

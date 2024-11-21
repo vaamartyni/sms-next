@@ -1,0 +1,144 @@
+{
+  "header": {
+    "logo": "Smart Mir",
+    "navLinks": {
+      "home": "Home",
+      "cases": "Cases",
+      "services": "Services",
+      "partners": "Partners",
+      "contacts": "Contacts",
+      "dictionary": "Dictionary"
+    },
+    "themeButton": {
+      "light": "light",
+      "dark": "dark"
+    },
+    "languageButton": {
+      "en": "EN",
+      "ru": "RU"
+    }
+  },
+  "section": {
+    "titles": [
+      "From frameworks to powerful digital solutions",
+      "From ideas to successful businesses",
+      "From communication to interaction",
+      "From products to consumers"
+    ],
+    "paragraphs": [
+      "Smart MIR Services is your reliable partner in the world of innovative IT solutions and expert services. We offer a comprehensive approach to business development based on the implementation of advanced technologies and process automation.",
+      "Our mission is to help companies adapt to the challenges of the digital age, ensuring sustainable growth, efficiency, and competitiveness.",
+      "We understand that each company is unique, so we create tailored solutions that precisely meet your goals and objectives. With us, you get more than technology — you gain confidence in the future."
+    ],
+    "button": "Start a project"
+  },
+  "wordCloud": {
+    "words": [
+      "Consulting",
+      "Development",
+      "Analysis",
+      "Integration",
+      "Optimization",
+      "Automation",
+      "Migration",
+      "Support",
+      "Strategy",
+      "Scaling",
+      "Security",
+      "Training",
+      "Hosting",
+      "Design",
+      "Testing",
+      "Cloud",
+      "Monitoring",
+      "Deployment",
+      "Maintenance",
+      "E-Commerce"
+    ]
+  },
+  "services": {
+    "title": "Discover 20 innovative services designed to empower your success in the digital era.",
+    "list": [
+      {
+        "title": "Web Development",
+        "description": "Creating responsive, user-friendly websites."
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Innovative mobile solutions for iOS and Android."
+      },
+      {
+        "title": "Cloud Computing",
+        "description": "Secure and scalable cloud infrastructure."
+      },
+      {
+        "title": "AI Integration",
+        "description": "Leveraging AI to transform your business processes."
+      },
+      {
+        "title": "Cybersecurity",
+        "description": "Ensuring robust protection against digital threats."
+      },
+      {
+        "title": "Data Analytics",
+        "description": "Unlocking actionable insights from your data."
+      },
+      {
+        "title": "UI/UX Design",
+        "description": "Crafting intuitive and aesthetically pleasing user interfaces."
+      },
+      {
+        "title": "Blockchain Development",
+        "description": "Building secure and transparent blockchain solutions."
+      },
+      {
+        "title": "E-Commerce Solutions",
+        "description": "Creating robust and scalable online stores."
+      },
+      {
+        "title": "Digital Marketing",
+        "description": "Enhancing your online presence with tailored strategies."
+      },
+      {
+        "title": "Machine Learning",
+        "description": "Developing predictive models and intelligent systems."
+      },
+      {
+        "title": "DevOps Services",
+        "description": "Streamlining development with efficient CI/CD pipelines."
+      },
+      {
+        "title": "IoT Solutions",
+        "description": "Connecting devices to create smarter ecosystems."
+      },
+      {
+        "title": "Content Management Systems",
+        "description": "Building flexible and user-friendly CMS platforms."
+      },
+      {
+        "title": "Quality Assurance",
+        "description": "Ensuring flawless performance through rigorous testing."
+      },
+      {
+        "title": "IT Consulting",
+        "description": "Providing expert advice for your technology strategies."
+      },
+      {
+        "title": "Network Administration",
+        "description": "Managing and optimizing network infrastructures."
+      },
+      {
+        "title": "Business Intelligence",
+        "description": "Transforming data into actionable insights for decision-making."
+      },
+      {
+        "title": "Serverless Computing",
+        "description": "Simplifying infrastructure with serverless architectures."
+      },
+      {
+        "title": "AR/VR Development",
+        "description": "Creating immersive experiences with AR and VR technologies."
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* 3 fixed columns of 200px */
+  grid-template-rows: repeat(3, 200px); /* 3 fixed rows of 200px */
+  gap: 1px; /* Space between grid items for the lines */
+  background-color: var(--color-border); /* Line color */
+  justify-content: center; /* Centers grid horizontally */
+  align-content: center; /* Centers grid vertically */
+}
+
+.gridItem {
+  background-color: var(--color-muted); /* Background for items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin: 0;
+}

@@ -1,0 +1,51 @@
+.stripe {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-primary); /* Фон полоски */
+  color: var(--color-background); /* Цвет текста */
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 50px; /* Высота полоски */
+  position: relative;
+}
+
+.words {
+  display: flex;
+  gap: 40px; /* Расстояние между словами */
+  white-space: nowrap; /* Запрет на перенос строк */
+}
+
+.word {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.rtl {
+  animation: scrollLtr 100s linear infinite; /* Анимация бесконечного движения */
+}
+
+.ltr {
+  animation: scrollRtl 100s linear infinite; /* Анимация бесконечного движения */
+}
+
+/* Анимация движения текста */
+@keyframes scrollLtr {
+  from {
+    transform: translateX(0); /* Начальная позиция */
+  }
+  to {
+    transform: translateX(-100%); /* Сдвиг влево на всю ширину */
+  }
+}
+
+@keyframes scrollRtl {
+  from {
+    transform: translateX(-100%); /* Начальная позиция */
+  }
+  to {
+    transform: translateX(0); /* Сдвиг влево на всю ширину */
+  }
+}
