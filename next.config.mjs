@@ -1,30 +1,15 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
-
-let assetPrefix = '';
-let basePath = '';
-
-if (isGithubActions) {
-    const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, ''); // Extract repo name
-    assetPrefix = `/${repo}/`;
-    basePath = `/${repo}`;
-}
-
 const nextConfig = {
     compiler: {
-        styledComponents: true,
+        styledComponents: true, // Включение поддержки styled-components
     },
     i18n: {
-        locales: ["en", "ru"],
-        defaultLocale: "en",
+        locales: ["en", "ru"], // List of supported languages (e.g., English, Russian)
+        defaultLocale: "en", // Default language
     },
     images: {
-        unoptimized: true, // Required for static exports
+        domains: ["encrypted-tbn0.gstatic.com"], // Добавьте домен хоста изображения
     },
-    output: 'export', // Required for GitHub Pages
-    assetPrefix,
-    basePath,
-    trailingSlash: true,
 };
 
 export default nextConfig;
