@@ -39,3 +39,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.scrollArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
