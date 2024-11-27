@@ -1,0 +1,54 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+  gap: 0; /* No gap between cells */
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 16px;
+  box-sizing: border-box;
+  max-height: 200px;
+
+  /* Wave animation */
+  animation: waveBorder 3s linear infinite;
+  animation-delay: calc(var(--animation-order) * 1s); /* Delay based on wave order */
+}
+
+.gridItem:nth-child(3n) {
+  border-right: none; /* Remove right border for the last column */
+}
+
+.gridItem:nth-last-child(-n + 3) {
+  border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@keyframes waveBorder {
+  0% {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+  50% {
+    border-right-color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+  }
+  100% {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+  }
+}

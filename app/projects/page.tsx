@@ -1,6 +1,4 @@
-// app/projects/page.tsx
 import styles from "./page.module.scss";
-import WordCloud from "@/app/components/WordCloud";
 
 export default function ProjectsPage() {
     return (
@@ -9,7 +7,7 @@ export default function ProjectsPage() {
                 <h1>Наши проекты</h1>
                 <p>Здесь будет список проектов, ограниченный рабочей областью.</p>
             </div>
-            <WordCloud />
+            {/*<WordCloud />*/}
         </section>
     );
 }

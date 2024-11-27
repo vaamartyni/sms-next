@@ -1,19 +1,16 @@
-import React, {Suspense, useRef, useState} from "react";
+import React, {Suspense} from "react";
 import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import {BackGrid} from "@/app/BackGrid";
 import Button from "@/app/components/Button";
-
-const state = { top: 0 };
+import {useTranslation} from "next-i18next";
+import Modal from "@/app/components/modal/Modal";
+import {useModal} from "@/app/components/modal/modalContext";
 
 export default function GridPage() {
-    const scrollArea = useRef<HTMLDivElement>(null);
-    const [pages, setPages] = useState(0);
-
-    const onScroll = (e: React.UIEvent<HTMLDivElement>) => {
-        state.top = e.currentTarget.scrollTop;
-    };
-
+    const { t } = useTranslation("common");
+    const { openModal } = useModal();
+    const buttonText = t("section.button");
     return (
         <>
             <Canvas
@@ -25,20 +22,19 @@ export default function GridPage() {
                 </Suspense>
             </Canvas>
             <div
-                ref={scrollArea}
-                onScroll={onScroll}
                 style={{
                     position: "absolute",
                     top: 0,
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    overflowY: "scroll",
                     backgroundColor: "transparent",
                 }}
             >
                 <div style={{height: "100%", display: 'flex', alignItems: 'center', justifyContent: 'center'}}> {/* Placeholder for scrolling */}
-                    <Button size={"medium"}>НАЧАТЬ СОТРУДНИЧЕСТВО</Button>
+                    <Button onClick={() => openModal(<Modal />)} variant={"primary"} size="large">
+                        {buttonText}
+                    </Button>
                 </div>
             </div>
         </>

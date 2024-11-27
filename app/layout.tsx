@@ -35,7 +35,6 @@ export default function RootLayout({
             <Header />
             <main className={styles.main}>
                 <ModalProvider>
-                    <Modal />
                     {children}
                 </ModalProvider>
             </main>

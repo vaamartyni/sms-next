@@ -1,4 +1,4 @@
-// app/contacts/page.tsx
+// app/contacts/not-found.tsx
 import styles from "./page.module.scss";
 
 export default function ContactsPage() {

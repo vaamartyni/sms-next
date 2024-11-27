@@ -1,61 +1,73 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Align items to the left */
   width: 100%;
   background-color: var(--color-background);
-  justify-content: space-between;
+  gap: 50px; /* Reduced spacing between content and image */
+  padding: 40px 16px; /* Add padding for compact design */
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
+  //transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-4px);
+    //box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-primary);
+    box-shadow: 4px 4px 1px var(--color-primary);
+  }
 }
 
-.ltr {
-  flex-direction: row; /* Изображение слева, контент справа */
-}
-
+.ltr,
 .rtl {
-  flex-direction: row-reverse; /* Изображение справа, контент слева */
+  flex-direction: row; /* Image on the left */
 }
 
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 800px;
-  align-items: flex-end;
+  justify-content: space-between; /* Space between title/description and tags/button */
+  gap: 8px;
+  max-width: 500px;
+  align-items: flex-start; /* Align text to the left */
+  height: 100%; /* Ensures full alignment */
 }
 
 .header {
-  font-size: 36px;
+  font-size: 24px; /* Reduced font size for compact look */
   font-weight: 700;
   color: var(--color-primary);
   margin: 0;
 }
 
 .paragraph {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 14px; /* Reduced font size */
+  line-height: 1.4; /* Adjusted line height for compactness */
+  font-weight: 400; /* Lighter weight for better readability */
   color: var(--color-text);
+  margin: 0;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px; /* Smaller gap for compact tags */
 }
 
 .tag {
   background-color: var(--color-muted);
   color: var(--color-text);
-  padding: 6px 12px;
+  padding: 4px 8px; /* Reduced padding for compact tags */
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px; /* Smaller font size */
 }
 
 .button {
   background-color: var(--color-primary);
   color: var(--color-background);
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 8px 16px; /* Reduced button size */
+  font-size: 14px; /* Smaller font size */
   font-weight: 700;
   border: none;
   cursor: pointer;
@@ -69,12 +81,13 @@
 .imageContainer {
   flex-shrink: 0;
   position: relative;
-  width: 650px; /* Ширина контейнера */
-  height: 650px; /* Высота контейнера */
+  width: 320px; /* Reduced image size */
+  height: 320px; /* Reduced image size */
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .image {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

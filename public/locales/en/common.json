@@ -25,11 +25,7 @@
       "From communication to interaction",
       "From products to consumers"
     ],
-    "paragraphs": [
-      "Smart MIR Services is your reliable partner in the world of innovative IT solutions and expert services. We offer a comprehensive approach to business development based on the implementation of advanced technologies and process automation.",
-      "Our mission is to help companies adapt to the challenges of the digital age, ensuring sustainable growth, efficiency, and competitiveness.",
-      "We understand that each company is unique, so we create tailored solutions that precisely meet your goals and objectives. With us, you get more than technology — you gain confidence in the future."
-    ],
+    "paragraphs": ["Smart MIR Services is your reliable partner in the world of innovative IT solutions and expert services. We offer a comprehensive approach to business development based on the implementation of advanced technologies and process automation."],
     "button": "Start a project"
   },
   "wordCloud": {
@@ -57,88 +53,154 @@
     ]
   },
   "services": {
-    "title": "Discover 20 innovative services designed to empower your success in the digital era.",
+    "title": "Services We Provide",
+    "description": "Others may treat property loss as inevitable. Work with us and start seeing it as preventable. By investing in property risk management today, you can increase your company’s ability to withstand loss in the future.",
     "list": [
       {
-        "title": "Web Development",
-        "description": "Creating responsive, user-friendly websites."
+        "imageUrl": "/services/ibc_unit.jpg",
+        "title": "IBC Unit",
+        "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
       },
       {
-        "title": "Mobile Apps",
-        "description": "Innovative mobile solutions for iOS and Android."
+        "imageUrl": "/services/climate.jpg",
+        "title": "Climate Resilience",
+        "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
       },
       {
-        "title": "Cloud Computing",
-        "description": "Secure and scalable cloud infrastructure."
+        "imageUrl": "/services/cyber_lock.jpg",
+        "title": "Cyber Risk Assessment",
+        "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
       },
       {
-        "title": "AI Integration",
-        "description": "Leveraging AI to transform your business processes."
+        "imageUrl": "/services/appraisal.jpg",
+        "title": "Appraisal Services",
+        "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
       },
       {
-        "title": "Cybersecurity",
-        "description": "Ensuring robust protection against digital threats."
+        "imageUrl": "/services/predictive_analytics.jpg",
+        "title": "Artificial Intelligence",
+        "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."
       },
       {
-        "title": "Data Analytics",
-        "description": "Unlocking actionable insights from your data."
+        "imageUrl": "/services/ibc_unit.jpg",
+        "title": "IBC Unit",
+        "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
       },
       {
-        "title": "UI/UX Design",
-        "description": "Crafting intuitive and aesthetically pleasing user interfaces."
+        "imageUrl": "/services/climate.jpg",
+        "title": "Climate Resilience",
+        "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
       },
       {
-        "title": "Blockchain Development",
-        "description": "Building secure and transparent blockchain solutions."
+        "imageUrl": "/services/cyber_lock.jpg",
+        "title": "Cyber Risk Assessment",
+        "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
       },
       {
-        "title": "E-Commerce Solutions",
-        "description": "Creating robust and scalable online stores."
+        "imageUrl": "/services/appraisal.jpg",
+        "title": "Appraisal Services",
+        "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
       },
       {
-        "title": "Digital Marketing",
-        "description": "Enhancing your online presence with tailored strategies."
-      },
-      {
-        "title": "Machine Learning",
-        "description": "Developing predictive models and intelligent systems."
-      },
-      {
-        "title": "DevOps Services",
-        "description": "Streamlining development with efficient CI/CD pipelines."
-      },
-      {
-        "title": "IoT Solutions",
-        "description": "Connecting devices to create smarter ecosystems."
-      },
-      {
-        "title": "Content Management Systems",
-        "description": "Building flexible and user-friendly CMS platforms."
-      },
-      {
-        "title": "Quality Assurance",
-        "description": "Ensuring flawless performance through rigorous testing."
-      },
-      {
-        "title": "IT Consulting",
-        "description": "Providing expert advice for your technology strategies."
-      },
-      {
-        "title": "Network Administration",
-        "description": "Managing and optimizing network infrastructures."
-      },
-      {
-        "title": "Business Intelligence",
-        "description": "Transforming data into actionable insights for decision-making."
-      },
-      {
-        "title": "Serverless Computing",
-        "description": "Simplifying infrastructure with serverless architectures."
-      },
-      {
-        "title": "AR/VR Development",
-        "description": "Creating immersive experiences with AR and VR technologies."
+        "imageUrl": "/services/predictive_analytics.jpg",
+        "title": "Artificial Intelligence",
+        "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."
       }
     ]
-  }
+  },
+  "clients": {
+    "title": "Our Clients",
+    "description": "We deeply value and cherish our clients. Their trust inspires us to consistently deliver innovative and tailored solutions that meet their unique needs. Each partnership we build is rooted in mutual respect, transparency, and a shared vision for success.",
+    "buttonText": "See more",
+    "list": [
+      {
+        "id": "1",
+        "imageUrl": "/logos/logo1.png",
+        "title": "Client Name",
+        "description": "Client description"
+      },
+      {
+        "id": "2",
+        "imageUrl": "/logos/logo2.png",
+        "title": "Client Name",
+        "description": "Client description"
+      },
+      {
+        "id": "3",
+        "imageUrl": "/logos/logo3.png",
+        "title": "Client Name",
+        "description": "Client description"
+      },
+      {
+        "id": "4",
+        "imageUrl": "/logos/logo4.png",
+        "title": "Client Name",
+        "description": "Client description"
+      },
+      {
+        "id": "5",
+        "imageUrl": "/logos/logo5.png",
+        "title": "Client Name",
+        "description": "Client description"
+      },
+      {
+        "id": "6",
+        "imageUrl": "/logos/logo6.png",
+        "title": "Client Name",
+        "description": "Client description"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "case-1",
+      "header": "Innovative AI Solutions",
+      "paragraph": "Discover how our AI-powered tools transformed business processes and increased productivity by 35%.",
+      "tags": ["AI", "Development", "Business"],
+      "buttonText": "Learn More",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
+      "imageAlt": "AI Solutions Image",
+      "available": true
+    },
+    {
+      "id": "case-2",
+      "header": "Next-Level Cybersecurity",
+      "paragraph": "Ensure data security on all platforms with our advanced solutions.",
+      "tags": ["Security", "Data"],
+      "buttonText": "Learn More",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
+      "imageAlt": "Cybersecurity Image",
+      "available": true
+    },
+    {
+      "id": "case-3",
+      "header": "Sustainable Development",
+      "paragraph": "Optimize resources to enhance efficiency and ecological sustainability.",
+      "tags": ["Ecology", "Sustainability"],
+      "buttonText": "Learn More",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
+      "imageAlt": "Sustainable Development Image",
+      "available": true
+    },
+    {
+      "id": "case-4",
+      "header": "Process Automation",
+      "paragraph": "Reduce costs with smart automation of your processes.",
+      "tags": ["Automation", "Efficiency"],
+      "buttonText": "Get Started",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
+      "imageAlt": "Automation Image",
+      "available": true
+    },
+    {
+      "id": "case-5",
+      "header": "Artificial Intelligence",
+      "paragraph": "Discover how AI helps solve complex business challenges.",
+      "tags": ["AI", "Innovation"],
+      "buttonText": "Learn More",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
+      "imageAlt": "AI Image",
+      "available": true
+    }
+  ]
 }

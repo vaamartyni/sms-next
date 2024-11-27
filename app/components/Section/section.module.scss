@@ -11,8 +11,10 @@
   max-width: 1720px; /* Ограничение ширины рабочей области */
   margin: 0 auto; /* Центрирование */
   width: 100%; /* Растягивание контейнера */
+  height: 100%; /* Растягивание контейнера */
   display: flex;
   gap: 100px;
+  align-items: center;
 }
 
 .wordCloud {
@@ -25,7 +27,8 @@
   color: var(--color-text); /* Основной текст */
   font-size: 16px;
   line-height: 24px;
-  width: 650px;
+  width: 850px;
+  height: 100%;
 }
 
 .divider {
@@ -38,23 +41,24 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
 }
 
 .title {
-  font-size: 64px;
+  font-size: 80px;
   line-height: 1.2;
   color: var(--color-primary); /* Ключевой цвет */
   font-weight: 700;
   margin: 0;
-  height: 200px;
+  height: 300px;
 }
 
 .paragraph {
   font-size: 18px;
   line-height: 28px;
-  color: var(--color-text); /* Основной текст */
+  color: var(--color-primary); /* Ключевой цвет */
   margin-top: 0;
+  max-width: 500px;
 }
 
 .button {

@@ -5,5 +5,5 @@
 
 .main {
   width: 100%; /* Растягивается на всю ширину */
-  padding-top: 80px; /* Adjust based on the height of the header */
+  padding-top: var(--header-height); /* Adjust based on the height of the header */
 }

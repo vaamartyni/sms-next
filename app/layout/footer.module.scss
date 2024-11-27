@@ -1,7 +1,6 @@
-// app/layout/footer.module.scss
 .footer {
-  background-color: #222; /* Фон футера */
-  color: white;
+  background-color: var(--color-background); /* Фон футера */
+  color: var(--color-text); /* Text color for nav links */
   width: 100%; /* Растягиваем фон на всю ширину */
   padding: 20px 0;
 }
@@ -10,5 +9,27 @@
   max-width: 1720px; /* Рабочая область */
   margin: 0 auto;
   padding: 0 16px;
+  display: flex; /* Flexbox для выравнивания секций */
+  justify-content: space-between; /* Разделяем контент */
+  align-items: center; /* Вертикальное выравнивание */
+}
+
+.leftSection {
   text-align: start;
+}
+
+.rightSection {
+  display: flex;
+  gap: 16px; /* Расстояние между ссылками */
+}
+
+.link {
+  color: var(--color-text); /* Text color for nav links */
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #1e90ff; /* Цвет при наведении */
+  }
 }

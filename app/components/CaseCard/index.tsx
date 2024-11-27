@@ -5,13 +5,15 @@ import Image from "next/image";
 import Button from "@/app/components/Button";
 
 interface CaseCardProps {
+    id: string;
     header: string;
     paragraph: string;
     tags: string[];
     buttonText: string;
     imageUrl: string;
     imageAlt?: string;
-    layoutDirection?: "ltr" | "rtl"; // Направление компоновки
+    available: boolean;
+    layoutDirection?: "ltr" | "rtl"; // Layout direction: Left-to-Right or Right-to-Left
 }
 
 export default function CaseCard({
@@ -21,13 +23,15 @@ export default function CaseCard({
                                      buttonText,
                                      imageUrl,
                                      imageAlt,
-                                     layoutDirection = "ltr", // По умолчанию LTR
+                                     layoutDirection = "ltr", // Default layout is Left-to-Right
                                  }: CaseCardProps) {
     return (
         <div
-            className={`${styles.card} ${layoutDirection === "rtl" ? styles.rtl : styles.ltr}`}
+            className={`${styles.card} ${
+                layoutDirection === "rtl" ? styles.rtl : styles.ltr
+            }`}
         >
-            {/* Левая/Правая сторона с изображением */}
+            {/* Image Section */}
             <div className={styles.imageContainer}>
                 <Image
                     src={imageUrl}
@@ -38,7 +42,7 @@ export default function CaseCard({
                 />
             </div>
 
-            {/* Правая/Левая сторона с контентом */}
+            {/* Content Section */}
             <div className={styles.content}>
                 <h2 className={styles.header}>{header}</h2>
                 <p className={styles.paragraph}>{paragraph}</p>
@@ -49,7 +53,9 @@ export default function CaseCard({
             </span>
                     ))}
                 </div>
-                <Button size={'medium'} onClick={() =>{}}>{buttonText}</Button>
+                <Button size="medium" onClick={() => {}}>
+                    {buttonText}
+                </Button>
             </div>
         </div>
     );

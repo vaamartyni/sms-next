@@ -6,7 +6,7 @@ import Link from "next/link";
 import NavLink from "@/app/components/NavLink";
 import LanguageButton from "@/app/components/LanguageButton";
 import ThemeButton from "@/app/components/ThemeButton";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);

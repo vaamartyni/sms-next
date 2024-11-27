@@ -1,11 +1,10 @@
-// app/cases/page.tsx
+// app/cases/not-found.tsx
 import styles from "./page.module.scss";
 
 export default function CasesPage() {
     return (
         <div className={styles.container}>
-            <h1>Кейсы</h1>
-            <p>Здесь будут представлены наши кейсы.</p>
+            Cases
         </div>
     );
 }

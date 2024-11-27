@@ -1,10 +1,13 @@
-/* app/partners/page.module.scss */
+.layoutSection {
+  background-color: var(--color-background); /* Белый фон */
+  width: 100%; /* Фон растягивается */
+}
 .container {
   max-width: 1720px;
   margin: 0 auto;
-  padding: 16px;
   text-align: center;
+  height: var(--section-full-height);
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
 }

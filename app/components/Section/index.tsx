@@ -1,16 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import styles from "./section.module.scss";
 import WordCloud from "@/app/components/WordCloud";
 import { useModal } from "@/app/components/modal/modalContext";
 import Button from "@/app/components/Button";
+import Modal from "@/app/components/modal/Modal";
 
 export default function Section() {
     const { openModal } = useModal();
     const { t } = useTranslation("common");
-    console.log( t("section.titles", { returnObjects: true }))
 
     // Заголовки для ротации
     const titles = t("section.titles", { returnObjects: true }) as string[];
@@ -55,10 +55,6 @@ export default function Section() {
     return (
         <section className={styles.section}>
             <div className={styles.container}>
-                <div className={styles.wordCloud}>
-                    <WordCloud />
-                </div>
-
                 <div className={styles.content}>
                     <h1 className={styles.title}>
                         <span className={styles.dynamicText}>{text}</span>
@@ -69,9 +65,12 @@ export default function Section() {
                                 {paragraph}
                             </p>
                         ))}
-                    <Button onClick={openModal} variant={"primary"} size="large">
+                    <Button onClick={() => openModal(<Modal />)} variant={"primary"} size="large">
                         {buttonText}
                     </Button>
+                </div>
+                <div className={styles.wordCloud}>
+                    <WordCloud/>
                 </div>
             </div>
         </section>

@@ -4,7 +4,7 @@ import * as THREE from "three";
 import { useRef, useState, useMemo, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Billboard, Text, TrackballControls } from "@react-three/drei";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 function Word({ children, position, onHover }) {
     const fontProps = {

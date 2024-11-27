@@ -6,7 +6,10 @@ import { Plane } from "@react-three/drei";
 export function BackGrid() {
     const gridRef = useRef<THREE.Mesh>(null);
 
-    useFrame(() => {
+    useFrame(({ scene }) => {
+        // Set the background color of the scene
+        scene.background = new THREE.Color("#2d72e3");
+
         if (gridRef.current) {
             // Animate the grid to move toward the camera
             gridRef.current.position.z += 0.01;
@@ -25,7 +28,13 @@ export function BackGrid() {
             rotation={[Math.PI / 2, 0, 0]}
             args={[80, 80, 128, 128]}
         >
-            <meshStandardMaterial color="#FFFFFF" wireframe />
+            {/* Custom material with emissive color for grid lines */}
+            <meshStandardMaterial
+                color="#FFFFFF"
+                emissive="#1e90ff"
+                wireframe
+                wireframeLinewidth={2} // Adjust line width
+            />
         </Plane>
     );
 }

@@ -14,17 +14,20 @@
 }
 
 .lightSection {
-  background-color: var(--color-muted); /* Светлый фон */
+  background-color: var(--color-background); /* Светлый фон */
   color: var(--color-text); /* Темный текст на светлом фоне */
   padding: 50px 0;
   width: 100%;
+  min-height: calc(100vh - 93px);
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 1720px; /* Рабочая область */
   margin: 0 auto;
   padding: 0 16px; /* Отступы для мобильных устройств */
-  gap: 80px;
+  gap: 50px;
+  min-height: calc(100vh - 93px);
 }

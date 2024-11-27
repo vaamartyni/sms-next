@@ -12,6 +12,9 @@
   /* Overlay Colors */
   --color-overlay-light-rgb: 255, 255, 255; /* Light overlay for glass backgrounds */
   --color-overlay-dark-rgb: 0, 0, 0; /* Dark overlay for glass backgrounds */
+  --header-height: 92px;
+  --footer-height: 90.67px;
+  --section-full-height: calc(100vh - var(--header-height) - var(--footer-height))
 }
 
 [data-theme="dark-blue"] {
@@ -47,4 +50,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: auto;
+}
+
+* {
+  scroll-behavior: smooth;
 }
