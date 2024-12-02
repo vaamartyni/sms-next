@@ -1,7 +1,23 @@
-/* app/cases/page.module.scss */
+.layoutSection {
+  background-color: var(--color-background); /* Background color from tokens */
+  width: 100%; /* Stretch background */
+}
+
 .container {
   max-width: 1720px;
   margin: 0 auto;
   text-align: center;
-  height: var(--section-full-height);
+  min-height: var(--section-full-height);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }

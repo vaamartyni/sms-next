@@ -5,7 +5,7 @@
       "home": "Home",
       "cases": "Cases",
       "services": "Services",
-      "partners": "Partners",
+      "clients": "Clients",
       "contacts": "Contacts",
       "dictionary": "Dictionary"
     },
@@ -57,51 +57,61 @@
     "description": "Others may treat property loss as inevitable. Work with us and start seeing it as preventable. By investing in property risk management today, you can increase your company’s ability to withstand loss in the future.",
     "list": [
       {
+        "id": "ibc-unit",
         "imageUrl": "/services/ibc_unit.jpg",
         "title": "IBC Unit",
         "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
       },
       {
+        "id": "climate-resilience",
         "imageUrl": "/services/climate.jpg",
         "title": "Climate Resilience",
         "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
       },
       {
+        "id": "cyber-risk-assessment",
         "imageUrl": "/services/cyber_lock.jpg",
         "title": "Cyber Risk Assessment",
         "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
       },
       {
+        "id": "appraisal-services",
         "imageUrl": "/services/appraisal.jpg",
         "title": "Appraisal Services",
         "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
       },
       {
+        "id": "artificial-intelligence",
         "imageUrl": "/services/predictive_analytics.jpg",
         "title": "Artificial Intelligence",
         "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."
       },
       {
+        "id": "ibc-unit-2",
         "imageUrl": "/services/ibc_unit.jpg",
         "title": "IBC Unit",
         "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
       },
       {
+        "id": "climate-resilience-2",
         "imageUrl": "/services/climate.jpg",
         "title": "Climate Resilience",
         "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
       },
       {
+        "id": "cyber-risk-assessment-2",
         "imageUrl": "/services/cyber_lock.jpg",
         "title": "Cyber Risk Assessment",
         "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
       },
       {
+        "id": "appraisal-services-2",
         "imageUrl": "/services/appraisal.jpg",
         "title": "Appraisal Services",
         "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
       },
       {
+        "id": "artificial-intelligence-2",
         "imageUrl": "/services/predictive_analytics.jpg",
         "title": "Artificial Intelligence",
         "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."

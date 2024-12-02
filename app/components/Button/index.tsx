@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./button.module.scss";
 
 type ButtonProps = {
-    onClick: () => void;
+    onClick?: () => void;
     children: React.ReactNode;
     size?: "small" | "medium" | "large"; // Button sizes
     variant?: "primary" | "secondary"; // Button variants

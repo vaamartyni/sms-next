@@ -2,6 +2,7 @@
 
 import styles from "./CaseCard.module.scss";
 import Image from "next/image";
+import Link from "next/link"; // Import Link for navigation
 import Button from "@/app/components/Button";
 
 interface CaseCardProps {
@@ -13,17 +14,18 @@ interface CaseCardProps {
     imageUrl: string;
     imageAlt?: string;
     available: boolean;
-    layoutDirection?: "ltr" | "rtl"; // Layout direction: Left-to-Right or Right-to-Left
+    layoutDirection?: "ltr" | "rtl";
 }
 
 export default function CaseCard({
+                                     id,
                                      header,
                                      paragraph,
                                      tags,
                                      buttonText,
                                      imageUrl,
                                      imageAlt,
-                                     layoutDirection = "ltr", // Default layout is Left-to-Right
+                                     layoutDirection = "ltr",
                                  }: CaseCardProps) {
     return (
         <div
@@ -31,7 +33,6 @@ export default function CaseCard({
                 layoutDirection === "rtl" ? styles.rtl : styles.ltr
             }`}
         >
-            {/* Image Section */}
             <div className={styles.imageContainer}>
                 <Image
                     src={imageUrl}
@@ -42,20 +43,19 @@ export default function CaseCard({
                 />
             </div>
 
-            {/* Content Section */}
             <div className={styles.content}>
                 <h2 className={styles.header}>{header}</h2>
                 <p className={styles.paragraph}>{paragraph}</p>
                 <div className={styles.tags}>
                     {tags.map((tag, index) => (
                         <span key={index} className={styles.tag}>
-              {tag}
-            </span>
+                            {tag}
+                        </span>
                     ))}
                 </div>
-                <Button size="medium" onClick={() => {}}>
-                    {buttonText}
-                </Button>
+                <Link href={`/cases/${id}`} passHref>
+                    <Button size="medium">{buttonText}</Button>
+                </Link>
             </div>
         </div>
     );

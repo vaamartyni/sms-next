@@ -10,7 +10,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
     return (
         <li className={styles.navItem}>
             <Link href={href} className={styles.navLink}>
-                {label}
+                {label.toUpperCase()}
             </Link>
         </li>
     );

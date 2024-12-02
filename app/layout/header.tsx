@@ -28,9 +28,8 @@ export default function Header() {
         { href: "/", label: t("header.navLinks.home") },
         { href: "/cases", label: t("header.navLinks.cases") },
         { href: "/services", label: t("header.navLinks.services") },
-        { href: "/partners", label: t("header.navLinks.partners") },
+        { href: "/clients", label: t("header.navLinks.clients") },
         { href: "/contacts", label: t("header.navLinks.contacts") },
-        { href: "/words", label: t("header.navLinks.dictionary") },
     ];
 
     return (

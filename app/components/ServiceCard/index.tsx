@@ -1,17 +1,18 @@
-"use client";
-
+import Link from "next/link";
 import styles from "./ServiceCard.module.scss";
 import { Canvas } from "@react-three/fiber";
 import RandomShape from "@/app/components/RandomShape";
 import Button from "@/app/components/Button";
 
 interface ServiceCardProps {
+    id: string;
     title: string;
     description: string;
     onReadMore: () => void;
 }
 
 export default function ServiceCard({
+                                        id,
                                         title,
                                         description,
                                         onReadMore,
@@ -27,9 +28,11 @@ export default function ServiceCard({
             </div>
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>
-            <Button size="medium" onClick={onReadMore}>
-                Read More
-            </Button>
+            <Link href={`/services/${id}`} passHref>
+                <Button size="medium" onClick={onReadMore}>
+                    Read More
+                </Button>
+            </Link>
         </div>
     );
 }

@@ -10,7 +10,7 @@ export default function ServicesSection() {
     // Типизация данных
     const serviceData = t("services", { returnObjects: true }) as {
         title: string; description: string,
-        list: { imageUrl: string; title: string; description: string }[];
+        list: { imageUrl: string; title: string; description: string, id: string }[];
     };
 
     return (
