@@ -30,6 +30,7 @@ export default function Header() {
         { href: "/services", label: t("header.navLinks.services") },
         { href: "/clients", label: t("header.navLinks.clients") },
         { href: "/contacts", label: t("header.navLinks.contacts") },
+        { href: "/web-dev", label: t("header.navLinks.dev") },
     ];
 
     return (

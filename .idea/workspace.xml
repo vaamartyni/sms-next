@@ -5,26 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6dedcf2-1d70-4ca6-8679-e69ea8b4b25a" name="Changes" comment="new features">
-      <change afterPath="$PROJECT_DIR$/app/cases/[id]/CaseDetails.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/cases/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/[id]/ServiceDetails.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/GridWhatWeOffer/GridWhatWeOffer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/GridWhatWeOffer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/PageTemplate/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/PageTemplate/page.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/web-dev/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/code-tech-dev-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/code-tech-dev-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/datastore-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/datastore-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/seo-1-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/seo-1-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/shopping-bag-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/shopping-bag-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/style-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/style-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/support-svgrepo-com-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/support-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icons/web-dev-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cases/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/cases/page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cases/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/cases/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CaseCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CaseCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/NavLink/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/NavLink/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/NavLink/navlink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/NavLink/navlink.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ServiceCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ServiceCard/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ServicesSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ServicesSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CaseCard/CaseCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/CaseCard/CaseCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partners/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/clients/page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partners/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/clients/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/words/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/words/words.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/[id]/ServiceDetails.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/[id]/ServiceDetails.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/[id]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/common.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/locales/ru/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/ru/common.json" afterDir="false" />
     </list>
@@ -53,8 +56,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/3d",
-    "last_opened_file_path": "C:/Users/Vladimir/projects/sms-next/app/services",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/Vladimir/projects/sms-next/public/icons",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,21 +73,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir\projects\sms-next\public\icons" />
+      <recent name="C:\Users\Vladimir\projects\sms-next\app\components\PageTemplate" />
+      <recent name="C:\Users\Vladimir\projects\sms-next\app\design" />
       <recent name="C:\Users\Vladimir\projects\sms-next\app\services" />
       <recent name="C:\Users\Vladimir\projects\sms-next\public\fonts" />
-      <recent name="$PROJECT_DIR$/public/icons" />
-      <recent name="$PROJECT_DIR$/public/logos" />
-      <recent name="$PROJECT_DIR$/public/locales/ru" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir\projects\sms-next\public\icons" />
       <recent name="C:\Users\Vladimir\projects\sms-next\app\pages" />
       <recent name="C:\Users\Vladimir\projects\sms-next\app" />
       <recent name="C:\Users\Vladimir\projects\sms-next\app\404" />
       <recent name="C:\Users\Vladimir\projects\sms-next\app\components" />
-      <recent name="$PROJECT_DIR$/public/icons" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -144,6 +147,10 @@
       <workItem from="1732262477358" duration="12704000" />
       <workItem from="1732545602731" duration="30530000" />
       <workItem from="1733137280134" duration="9086000" />
+      <workItem from="1733218621916" duration="2025000" />
+      <workItem from="1733234586370" duration="2315000" />
+      <workItem from="1733237516317" duration="64000" />
+      <workItem from="1733308325372" duration="11617000" />
     </task>
     <task id="LOCAL-00001" summary="new features">
       <option name="closed" value="true" />

@@ -7,19 +7,39 @@
   max-width: 1720px;
   margin: 0 auto;
   text-align: center;
-  height: var(--section-full-height);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.mainCard {
+  height: var(--section-full-height);
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
 }
 
 .serviceDetails {
-  padding: 4rem 2rem;
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
+  text-align: start;
   background-color: var(--color-muted); /* Light muted background for content */
   border-radius: 10px;
+}
+.canvasContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .title {

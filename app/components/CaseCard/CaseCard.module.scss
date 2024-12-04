@@ -5,7 +5,7 @@
   width: 100%;
   background-color: var(--color-background);
   gap: 50px; /* Reduced spacing between content and image */
-  padding: 40px 16px; /* Add padding for compact design */
+  padding: 40px 16px; /* Add padding for compact web-dev */
   box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
   //transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid var(--color-border);
@@ -39,6 +39,7 @@
   font-weight: 700;
   color: var(--color-primary);
   margin: 0;
+  text-align: start;
 }
 
 .paragraph {
@@ -47,6 +48,7 @@
   font-weight: 400; /* Lighter weight for better readability */
   color: var(--color-text);
   margin: 0;
+  text-align: start;
 }
 
 .tags {

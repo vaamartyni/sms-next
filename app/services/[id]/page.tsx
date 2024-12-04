@@ -27,8 +27,7 @@ export default function ServiceDetails() {
     return (
         <div className={styles.layoutSection}>
             <div className={styles.container}>
-                <div className={styles.serviceDetails}>
-                    <h1 className={styles.title}>{service.title}</h1>
+                <div className={styles.mainCard}>
                     <div className={styles.canvasContainer}>
                         <Canvas>
                             <ambientLight intensity={0.5}/>
@@ -36,6 +35,13 @@ export default function ServiceDetails() {
                             <RandomShape/>
                         </Canvas>
                     </div>
+                    <div className={styles.serviceDetails}>
+                        <h1 className={styles.title}>{service.title}</h1>
+                        <p className={styles.description}>{service.description}</p>
+                    </div>
+                </div>
+                <div className={styles.serviceDetails}>
+                    <h1 className={styles.title}>{service.title}</h1>
                     <p className={styles.description}>{service.description}</p>
                 </div>
             </div>

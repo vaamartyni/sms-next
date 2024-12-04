@@ -1,0 +1,104 @@
+.page {
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.container {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left; /* Левое выравнивание текста по умолчанию */
+}
+
+.heroSection {
+  display: flex;
+  align-items: start;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: 100px 20px;
+  min-height: 400px;
+
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: left; /* Левое выравнивание заголовка */
+  }
+
+  .subtitle {
+    font-size: 24px;
+    opacity: 0.9;
+    max-width: 800px;
+    text-align: left; /* Левое выравнивание подзаголовка */
+  }
+}
+
+.genericSection, {
+  padding: 60px 20px;
+
+  .sectionTitle {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+    text-align: left; /* Левое выравнивание заголовков */
+  }
+
+  .text {
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 24px;
+    text-align: left; /* Левое выравнивание текста */
+  }
+
+  .typesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    gap: 20px; /* Расстояние между карточками */
+    margin-top: 20px; /* Отступ сверху */
+  }
+
+  .typeCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background); /* Цвет фона карточки */
+    border: 1px solid var(--color-border); /* Граница карточки */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень карточки */
+    border-radius: 8px; /* Закругление углов */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+
+    &:hover {
+      transform: translateY(-5px); /* Лёгкое поднятие карточки */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Увеличенная тень */
+    }
+
+    h3 {
+      font-size: 20px; /* Размер заголовка */
+      color: var(--color-primary); /* Основной цвет заголовка */
+      margin-bottom: 12px; /* Отступ снизу */
+      font-weight: bold; /* Жирный шрифт для заголовка */
+    }
+
+    p {
+      font-size: 16px; /* Размер текста описания */
+      color: var(--color-text); /* Основной цвет текста */
+      line-height: 1.5; /* Межстрочный интервал */
+    }
+
+    .backButton {
+      color: var(--color-primary);
+      background: none;
+      padding: 10px 0;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-transform: uppercase;
+      align-self: flex-end;
+      width: fit-content;
+      margin-top: auto;
+    }
+  }
+}
