@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import styles from "./Modal.module.scss"; // Assuming styles are in Modal.module.scss
+import styles from "./modal.module.scss"; // Assuming styles are in Modal.module.scss
 
 type ModalContextType = {
     isOpen: boolean;
