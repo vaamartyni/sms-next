@@ -1,0 +1,112 @@
+.section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  gap: 20px;
+  height: var(--section-full-height);
+}
+
+.container {
+  display: flex;
+  //flex-direction: column;
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  //background-color: var(--color-muted);
+  //border-right: 1px solid var(--color-border);
+}
+
+.left h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--color-primary);
+  //margin: auto 0;
+}
+
+.right {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: var(--section-full-height);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-muted);
+}
+
+.right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+
+.right::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+.markdownContent {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--color-text);
+
+  /* Headers styling */
+  h1,
+  h2,
+  h3 {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
+
+  /* Paragraph styling */
+  p {
+    margin-bottom: 12px;
+  }
+
+  /* Ordered and unordered list styling */
+  ol, ul {
+    margin: 12px 0;
+    padding-left: 40px; /* Ensure proper indentation */
+  }
+
+  li {
+    margin: 6px 0; /* Space between list items */
+    line-height: 1.6; /* Adjust for better readability */
+    display: list-item;
+  }
+
+  /* Specifically for ordered lists */
+  ol {
+    list-style-type: decimal; /* Default numbered style */
+    list-style-position: outside; /* Ensure marker is outside the content */
+  }
+
+  ol li {
+    text-indent: -1em; /* Align text with the marker */
+    padding-left: 1em; /* Add padding to align the marker */
+  }
+
+  /* Specific styles for unordered lists */
+  ul {
+    list-style-type: disc; /* Default bullet style */
+  }
+
+  ul li {
+    text-indent: 0; /* No adjustment for unordered markers */
+    padding-left: 0; /* No additional padding */
+  }
+}

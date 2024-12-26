@@ -1,0 +1,92 @@
+.layoutSection {
+  background-color: var(--color-background);
+  width: 100%;
+  min-height: var(--section-full-height);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.clientCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  background-color: var(--color-background);
+  padding: 20px;
+  //box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
+  //border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%; /* Ensures the card spans the column width */
+  //max-width: 300px; /* Ensures the card doesn't exceed a specific width */
+  //min-height: 400px; /* Fix height for consistency */
+  box-sizing: border-box; /* Include padding in height calculation */
+  gap: 16px;
+
+  &:hover {
+    transform: translateY(-4px);
+    //border: 1px solid var(--color-primary);
+    //box-shadow: 4px 4px 1px var(--color-primary);
+  }
+}
+
+.logo {
+  width: 150px; /* Minimum width */
+  height: 150px; /* Minimum height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image doesn't overflow */
+  background-color: var(--color-muted); /* Optional background color for empty spaces */
+}
+
+.logo img {
+  width: 100%; /* Scale to fit the container */
+  height: 100%; /* Scale to fit the container */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+.info {
+  text-align: left;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-hover);
+}
+
+.clientCardLink {
+  text-decoration: none;
+}

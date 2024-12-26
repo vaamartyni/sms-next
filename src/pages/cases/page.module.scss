@@ -1,0 +1,23 @@
+.layoutSection {
+  background-color: var(--color-background); /* Background color from tokens */
+  width: 100%; /* Stretch background */
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: var(--section-full-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  justify-content: center;
+  align-items: start;
+}

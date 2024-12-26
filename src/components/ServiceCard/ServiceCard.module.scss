@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  background-color: var(--color-background);
+  padding: 20px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%; /* Ensures the card spans the column width */
+  //max-width: 300px; /* Ensures the card doesn't exceed a specific width */
+  min-height: 400px; /* Fix height for consistency */
+  box-sizing: border-box; /* Include padding in height calculation */
+  gap: 16px;
+
+  &:hover {
+    transform: translateY(-4px);
+    border: 1px solid var(--color-primary);
+    box-shadow: 4px 4px 1px var(--color-primary);
+  }
+}
+
+.canvasContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures a perfect square for the canvas */
+  //background: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 8px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.5;
+  flex-grow: 1; /* Allows the description to take up available space */
+  overflow: hidden; /* Hides overflow text if it doesn't fit */
+  text-overflow: ellipsis; /* Adds ellipsis if text is truncated */
+  margin-bottom: 8px;
+}
+
+.card a {
+  margin-top: auto; /* Pushes the button to the bottom */
+  align-self: stretch; /* Ensures the button spans the card's width */
+}

@@ -1,0 +1,22 @@
+.layoutSection {
+  background-color: var(--color-background); /* Background color from tokens */
+  width: 100%; /* Stretch background */
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  min-height: var(--section-full-height);
+  padding: 20px; /* Add padding to the container */
+  display: flex;
+  align-items: flex-start; /* Align items to the top of the container */
+  justify-content: flex-start; /* Align items from left to right */
+}
+
+.servicesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  justify-items: start; /* Align grid items to the left */
+}

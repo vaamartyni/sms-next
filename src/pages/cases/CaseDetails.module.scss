@@ -1,0 +1,223 @@
+.layoutSection {
+  background-color: var(--color-background); /* Background color from tokens */
+  width: 100%; /* Stretch background */
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  min-height: var(--section-full-height);
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.caseDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.description {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.description p {
+  border-left: 2px solid var(--color-border);
+  padding-left: 20px;
+  max-width: 700px;
+  font-size: 8rem;
+  margin: 0;
+}
+
+
+.caseDetails h1 {
+  font-size: 7rem;
+  color: var(--color-text); /* Main text color from tokens */
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.caseDetails p {
+  font-size: 1.125rem;
+  color: var(--color-text); /* Main text color from tokens */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.caseDetails img {
+  max-width: 100%;
+  height: auto;
+  //border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: var(--color-primary); /* Primary color for tags */
+  color: var(--color-background); /* Background color for text */
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .caseDetails {
+    padding: 1rem;
+  }
+
+  .caseDetails h1 {
+    font-size: 2rem;
+  }
+
+  .caseDetails p {
+    font-size: 1rem;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+}
+
+.markdownContent {
+  text-align: start;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4; // Уменьшена высота строки
+  font-size: 18px; // Увеличен базовый размер текста
+  color: var(--color-text);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 3.5em; // Увеличен размер заголовка
+    line-height: 1.2; // Уменьшена высота строки
+  }
+
+  h2 {
+    font-size: 3em;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 2em;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.75em;
+    line-height: 1.4;
+  }
+
+  h6 {
+    font-size: 1.5em;
+    line-height: 1.4;
+  }
+
+  p {
+    margin: 12px 0;
+    color: var(--color-text);
+    font-size: 1.125em; // Немного увеличен текст абзацев
+  }
+
+  ul, ol {
+    margin: 12px 0 12px 30px; // Увеличен отступ
+    padding: 0;
+    list-style-position: inside;
+
+    li {
+      margin-bottom: 8px; // Увеличен промежуток между пунктами
+      color: var(--color-text);
+    }
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-hover);
+      text-decoration: underline;
+    }
+  }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 15px 25px;
+    background-color: var(--color-muted);
+    border-left: 6px solid var(--color-primary);
+    color: var(--color-text);
+
+    p {
+      margin: 0;
+      font-style: italic;
+    }
+  }
+
+  code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-muted);
+    color: var(--color-text);
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-size: 1em; // Размер текста в коде
+  }
+
+  pre {
+    background-color: var(--color-muted);
+    color: var(--color-text);
+    padding: 12px 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+
+    th, td {
+      border: 1px solid var(--color-border);
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--color-muted);
+      color: var(--color-text);
+    }
+  }
+}

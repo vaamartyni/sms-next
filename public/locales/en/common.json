@@ -19,199 +19,38 @@
       "ru": "RU"
     }
   },
-  "section": {
-    "titles": [
-      "From frameworks to powerful digital solutions",
-      "From ideas to successful businesses",
-      "From communication to interaction",
-      "From products to consumers"
-    ],
-    "paragraphs": ["Smart MIR Services is your reliable partner in the world of innovative IT solutions and expert services. We offer a comprehensive approach to business development based on the implementation of advanced technologies and process automation."],
-    "button": "Start a project"
-  },
-  "wordCloud": {
-    "words": [
-      "Consulting",
-      "Development",
-      "Analysis",
-      "Integration",
-      "Optimization",
-      "Automation",
-      "Migration",
-      "Support",
-      "Strategy",
-      "Scaling",
-      "Security",
-      "Training",
-      "Hosting",
-      "Design",
-      "Testing",
-      "Cloud",
-      "Monitoring",
-      "Deployment",
-      "Maintenance",
-      "E-Commerce"
-    ]
-  },
-  "services": {
-    "title": "Services We Provide",
-    "description": "Others may treat property loss as inevitable. Work with us and start seeing it as preventable. By investing in property risk management today, you can increase your company’s ability to withstand loss in the future.",
-    "list": [
-      {
-        "id": "ibc-unit",
-        "imageUrl": "/services/ibc_unit.jpg",
-        "title": "IBC Unit",
-        "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
-      },
-      {
-        "id": "climate-resilience",
-        "imageUrl": "/services/climate.jpg",
-        "title": "Climate Resilience",
-        "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
-      },
-      {
-        "id": "cyber-risk-assessment",
-        "imageUrl": "/services/cyber_lock.jpg",
-        "title": "Cyber Risk Assessment",
-        "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
-      },
-      {
-        "id": "appraisal-services",
-        "imageUrl": "/services/appraisal.jpg",
-        "title": "Appraisal Services",
-        "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
-      },
-      {
-        "id": "artificial-intelligence",
-        "imageUrl": "/services/predictive_analytics.jpg",
-        "title": "Artificial Intelligence",
-        "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."
-      },
-      {
-        "id": "ibc-unit-2",
-        "imageUrl": "/services/ibc_unit.jpg",
-        "title": "IBC Unit",
-        "description": "Storing ignitable products just got safer. Learn how our FM Approved solutions can help you prevent and minimize ignitable liquid fires."
-      },
-      {
-        "id": "climate-resilience-2",
-        "imageUrl": "/services/climate.jpg",
-        "title": "Climate Resilience",
-        "description": "Learn how our Climate Resilience Product Suite can help you take control in an ever-changing climate."
-      },
-      {
-        "id": "cyber-risk-assessment-2",
-        "imageUrl": "/services/cyber_lock.jpg",
-        "title": "Cyber Risk Assessment",
-        "description": "Our cyber risk engineering approach strengthens your business resilience by addressing physical security, information security, and industrial control systems."
-      },
-      {
-        "id": "appraisal-services-2",
-        "imageUrl": "/services/appraisal.jpg",
-        "title": "Appraisal Services",
-        "description": "Protect your company’s physical assets by knowing exactly what they’re worth. Start with a property value appraisal."
-      },
-      {
-        "id": "artificial-intelligence-2",
-        "imageUrl": "/services/predictive_analytics.jpg",
-        "title": "Artificial Intelligence",
-        "description": "Determine risk severity and predict losses with unprecedented accuracy using our AI tools."
-      }
-    ]
-  },
-  "clients": {
-    "title": "Our Clients",
-    "description": "We deeply value and cherish our clients. Their trust inspires us to consistently deliver innovative and tailored solutions that meet their unique needs. Each partnership we build is rooted in mutual respect, transparency, and a shared vision for success.",
-    "buttonText": "See more",
-    "list": [
-      {
-        "id": "1",
-        "imageUrl": "/logos/logo1.png",
-        "title": "Client Name",
-        "description": "Client description"
-      },
-      {
-        "id": "2",
-        "imageUrl": "/logos/logo2.png",
-        "title": "Client Name",
-        "description": "Client description"
-      },
-      {
-        "id": "3",
-        "imageUrl": "/logos/logo3.png",
-        "title": "Client Name",
-        "description": "Client description"
-      },
-      {
-        "id": "4",
-        "imageUrl": "/logos/logo4.png",
-        "title": "Client Name",
-        "description": "Client description"
-      },
-      {
-        "id": "5",
-        "imageUrl": "/logos/logo5.png",
-        "title": "Client Name",
-        "description": "Client description"
-      },
-      {
-        "id": "6",
-        "imageUrl": "/logos/logo6.png",
-        "title": "Client Name",
-        "description": "Client description"
-      }
-    ]
-  },
-  "cases": [
-    {
-      "id": "case-1",
-      "header": "Innovative AI Solutions",
-      "paragraph": "Discover how our AI-powered tools transformed business processes and increased productivity by 35%.",
-      "tags": ["AI", "Development", "Business"],
-      "buttonText": "Learn More",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
-      "imageAlt": "AI Solutions Image",
-      "available": true
+  "applicationCheckModal": {
+    "title": "Check Request Status",
+    "placeholders": {
+      "reqId": "Enter request ID"
     },
-    {
-      "id": "case-2",
-      "header": "Next-Level Cybersecurity",
-      "paragraph": "Ensure data security on all platforms with our advanced solutions.",
-      "tags": ["Security", "Data"],
-      "buttonText": "Learn More",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
-      "imageAlt": "Cybersecurity Image",
-      "available": true
+    "buttons": {
+      "checking": "Checking...",
+      "check": "Check"
     },
-    {
-      "id": "case-3",
-      "header": "Sustainable Development",
-      "paragraph": "Optimize resources to enhance efficiency and ecological sustainability.",
-      "tags": ["Ecology", "Sustainability"],
-      "buttonText": "Learn More",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
-      "imageAlt": "Sustainable Development Image",
-      "available": true
+    "fields": {
+      "reqId": "Request ID",
+      "name": "Name",
+      "phone": "Phone",
+      "message": "Message",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
     },
-    {
-      "id": "case-4",
-      "header": "Process Automation",
-      "paragraph": "Reduce costs with smart automation of your processes.",
-      "tags": ["Automation", "Efficiency"],
-      "buttonText": "Get Started",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
-      "imageAlt": "Automation Image",
-      "available": true
+    "statuses": {
+      "idle": "The request is awaiting processing.",
+      "accepted": "The request has been accepted.",
+      "rejected": "The request has been rejected.",
+      "inProgress": "The request is in progress.",
+      "finished": "The request has been completed.",
+      "unknown": "Unknown status."
     },
-    {
-      "id": "case-5",
-      "header": "Artificial Intelligence",
-      "paragraph": "Discover how AI helps solve complex business challenges.",
-      "tags": ["AI", "Innovation"],
-      "buttonText": "Learn More",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxJTfS2oOCt7hOsSOOM1V_mIFj5i8Nj_5iA&s",
-      "imageAlt": "AI Image",
-      "available": true
+    "alerts": {
+      "enterReqId": "Please enter a request ID."
+    },
+    "errors": {
+      "generic": "An error occurred.",
+      "notFound": "No request found with the provided ID."
     }
-  ]
+  }
 }

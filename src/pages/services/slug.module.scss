@@ -1,0 +1,87 @@
+.section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  gap: 20px;
+  height: var(--section-full-height);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.left h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.right {
+  flex: 1.5;
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--color-primary) var(--color-muted);
+  height: 100%; /* Ensure the section fills the height */
+  padding: 20px; /* Add padding to avoid cutting off content */
+  display: flex;
+  flex-direction: column; /* Allow for stacking content */
+  box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.right::-webkit-scrollbar {
+  width: 8px; /* Adjust scrollbar width */
+}
+
+.right::-webkit-scrollbar-track {
+  background: var(--color-muted); /* Background of the scrollbar track */
+}
+
+.right::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary); /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the scrollbar */
+}
+
+/* Add spacing for markdown content */
+.markdownContent {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--color-text);
+
+  /* Headers styling */
+  h1,
+  h2,
+  h3 {
+    color: var(--color-primary);
+    margin-bottom: 16px;
+  }
+
+  /* Paragraph styling */
+  p {
+    margin-bottom: 12px;
+  }
+
+  /* Ensure lists are styled properly */
+  ol, ul {
+    margin: 12px 0;
+    padding-left: 40px;
+  }
+
+  li {
+    margin: 6px 0;
+    line-height: 1.6;
+  }
+}

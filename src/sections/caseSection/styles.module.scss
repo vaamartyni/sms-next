@@ -1,0 +1,41 @@
+.darkSection {
+  background-color: var(--color-primary); /* Темный фон */
+  color: var(--color-background); /* Белый текст на темном фоне */
+  padding: 50px 0;
+  height: 700px;
+  width: 100%; /* Фон растягивается на всю ширину экрана */
+}
+
+.layoutSection {
+  height: fit-content;
+  background-color: var(--color-background); /* Белый фон */
+  padding: 50px 0;
+  width: 100%; /* Фон растягивается */
+}
+
+.lightSection {
+  background-color: var(--color-background); /* Светлый фон */
+  color: var(--color-text); /* Темный текст на светлом фоне */
+  padding: 50px 0;
+  width: 100%;
+  min-height: calc(100vh - 93px);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1720px; /* Рабочая область */
+  margin: 0 auto;
+  padding: 0 16px; /* Отступы для мобильных устройств */
+  gap: 50px;
+  min-height: calc(100vh - 93px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Две колонки одинаковой ширины
+  gap: 100px; // Расстояние между карточками
+  justify-content: center; // Выравнивание по центру
+  align-items: start; // Выравнивание карточек по верхнему краю
+}
