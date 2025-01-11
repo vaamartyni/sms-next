@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { GetStaticProps } from "next";
 import { GraphQLClient } from "graphql-request";
 import SpinningStripe from "@/src/components/SpinningStripe";
@@ -102,27 +103,26 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
     `;
 
     const variables = {
-        locale: locale || "en", // Use provided locale or fallback to "en"
-        pagination: { limit: -1 }, // Disable pagination limit for words
+        locale: locale || "en",
+        pagination: { limit: -1 },
     };
 
     try {
         const response = await client.request<HeroResponse>(query, variables);
-        console.log("Fetched Cases: ", response.cases);
         return {
             props: {
                 hero: response.hero,
-                cases: response.cases, // Pass the cases data
-                clients: response.clients, // Pass the cases data
+                cases: response.cases,
+                clients: response.clients,
             },
-            revalidate: 10, // ISR: rebuild every 10 seconds
+            revalidate: 10,
         };
     } catch (error) {
         console.error("Error fetching Hero data:", error);
         return {
             props: {
                 hero: null,
-                cases: [], // Fallback to empty array for cases
+                cases: [],
             },
         };
     }
@@ -133,10 +133,27 @@ export default function HomePage({ hero, cases, clients }: { hero: HeroResponse[
         return <div>Failed to load Hero data.</div>;
     }
 
-    console.log("Cases Passed to CaseSection: ", cases);
+    const pageTitle = hero.headings[0]?.Heading || "Homepage";
+    const pageDescription = hero.paragraph || "Welcome to our homepage.";
+    const pageImage = hero.controls[0]?.url || "/default-og-image.jpg"; // Fallback image URL
 
     return (
         <>
+            <Head>
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
+                {/* Open Graph Meta Tags */}
+                <meta property="og:title" content={pageTitle} />
+                <meta property="og:description" content={pageDescription} />
+                <meta property="og:image" content={pageImage} />
+                <meta property="og:url" content={process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"} />
+                <meta property="og:type" content="website" />
+                {/* Twitter Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageTitle} />
+                <meta name="twitter:description" content={pageDescription} />
+                <meta name="twitter:image" content={pageImage} />
+            </Head>
             <HeroSection
                 titles={hero.headings.map((heading) => heading.Heading)}
                 paragraph={hero.paragraph}

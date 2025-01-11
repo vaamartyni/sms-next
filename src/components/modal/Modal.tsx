@@ -18,9 +18,9 @@ const CREATE_CONTACT_FORM = gql`
 `;
 
 export default function Modal() {
-    const [name, setName] = useState("Vladimir Martynyuk");
-    const [phone, setPhone] = useState("79957955212");
-    const [message, setMessage] = useState("I wanna create the best app ever");
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
 
     const [createContactForm, { data, loading, error }] = useMutation(CREATE_CONTACT_FORM);
 
