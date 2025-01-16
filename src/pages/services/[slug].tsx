@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import styles from "./slug.module.scss";
 import MarkdownTypingEffect from "@/src/components/MarkdownTypingEffect";
 import {Service} from "@/src/pages/services/index";
-import ReactMarkdown from "react-markdown";
 import RandomShape from "@/src/components/RandomShape";
 import {Canvas} from "@react-three/fiber";
 
@@ -30,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     `;
 
     const response: {services: Service[]} = await client.request(query);
-    const paths = response.services.map((item: any) => ({
+    const paths = response.services.map((item: Service) => ({
         params: { slug: item.slug },
     }));
 

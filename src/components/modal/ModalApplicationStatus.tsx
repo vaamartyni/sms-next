@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { gql, useLazyQuery } from "@apollo/client";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import styles from "./modal.module.scss";
 import Button from "@/src/components/Button";
 import { useTranslation } from "@/src/hooks/useTranslation";
@@ -25,7 +25,7 @@ const CHECK_REQUEST_STATUS = gql`
 export default function ApplicationCheckModal() {
     const [reqId, setReqId] = useState("");
     const { t } = useTranslation(); // Translation hook
-    const router = useRouter(); // Next.js router
+    // const router = useRouter(); // Next.js router
     const [fetchRequestStatus, { data, loading, error }] = useLazyQuery(CHECK_REQUEST_STATUS);
 
     const [isDelayed, setIsDelayed] = useState(false); // For delayed loader
@@ -62,12 +62,12 @@ export default function ApplicationCheckModal() {
         }
     };
 
-    const navigateToRequestPage = () => {
-        if (data && data.contctForms.length > 0) {
-            const reqId = data.contctForms[0].req_id;
-            router.push(`/applicationRequest/${reqId}`);
-        }
-    };
+    // const navigateToRequestPage = () => {
+    //     if (data && data.contctForms.length > 0) {
+    //         const reqId = data.contctForms[0].req_id;
+    //         router.push(`/applicationRequest/${reqId}`);
+    //     }
+    // };
 
     const getStatusDescription = (status: string) => {
         switch (status) {

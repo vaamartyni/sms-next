@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6dedcf2-1d70-4ca6-8679-e69ea8b4b25a" name="Changes" comment="">
+    <list default="true" id="f6dedcf2-1d70-4ca6-8679-e69ea8b4b25a" name="Changes" comment="new features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GridWhatWeOffer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GridWhatWeOffer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroWithCarousel/HeroWithCarousel.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroWithCarousel/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WordCloud.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WordCloud.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/ModalApplicationStatus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/ModalApplicationStatus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/modalContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/modalContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useTranslation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTranslation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/applicationRequest/[uuid].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/applicationRequest/[uuid].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/services/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/services/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/backend-connect&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vladimirmartyniuk/WebstormProjects/sms-next/src/pages/applicationRequest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vmrtn/projects/sm-corporate/frontend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -49,8 +60,9 @@
     &quot;npm.build.executor&quot;: &quot;Run&quot;,
     &quot;npm.dev.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.jsgraphql&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/vmrtn/projects/sm-corporate/sms-next/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/vmrtn/projects/sm-corporate/frontend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -120,7 +132,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.19416.2" />
       </set>
     </attachedChunks>
   </component>
@@ -152,6 +164,8 @@
       <workItem from="1734973447534" duration="20000" />
       <workItem from="1735043839992" duration="142000" />
       <workItem from="1735044118658" duration="4539000" />
+      <workItem from="1736598473568" duration="1624000" />
+      <workItem from="1736719344655" duration="6586000" />
     </task>
     <task id="LOCAL-00001" summary="new features">
       <option name="closed" value="true" />
@@ -161,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732724023890</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new features">
+      <option name="closed" value="true" />
+      <created>1736598634659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736598634659</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

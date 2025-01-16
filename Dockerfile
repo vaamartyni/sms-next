@@ -4,7 +4,7 @@ FROM node:18-alpine
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем package.json и package-lock.json
+# Копируем package.json и package-lock.json || ENV
 COPY package*.json ./
 
 # Устанавливаем зависимости

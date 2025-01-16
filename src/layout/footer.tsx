@@ -1,7 +1,6 @@
 import styles from "./footer.module.scss";
 import Link from "next/link";
 import { SocialLink } from "@/src/types/global";
-import Image from "next/image";
 
 interface FooterProps {
     socialLinks: SocialLink[];
