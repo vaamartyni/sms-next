@@ -11,8 +11,8 @@ const nextConfig = {
         domains: ["encrypted-tbn0.gstatic.com", "localhost"], // Добавьте домен хоста изображения
     },
     typescript: {
-        ignoreBuildErrors: true
-    }
+        ignoreBuildErrors: true,
+    },
 };
 
 export default nextConfig;

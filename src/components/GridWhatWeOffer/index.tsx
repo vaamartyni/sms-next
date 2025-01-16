@@ -27,6 +27,7 @@ export default function GridWhatWeOffer({ items }: GridProps) {
                         className={styles.gridItem}
                         style={{ "--animation-order": waveOrder } as React.CSSProperties}
                     >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={item.imageUrl} alt={item.title} className={styles.image} />
                         <h3 className={styles.title}>{item.title}</h3>
                         <p className={styles.description}>{item.description}</p>

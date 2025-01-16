@@ -43,6 +43,7 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
         setIsOpen(false);
 
         // Убираем параметр из URL при закрытии модального окна
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { modal, ...restQuery } = query; // Исключаем параметр `modal`
         router.replace({ pathname: router.pathname, query: restQuery }, undefined, {
             shallow: true,

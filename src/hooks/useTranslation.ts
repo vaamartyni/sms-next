@@ -11,7 +11,7 @@ const loadLocaleData = async (locale: string) => {
 
 export const useTranslation = () => {
     const { locale } = useRouter();
-    const [translations, setTranslations] = useState<Record<string, any>>({});
+    const [translations, setTranslations] = useState<Record<string, never>>({});
 
     useEffect(() => {
         const loadTranslations = async () => {

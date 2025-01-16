@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { gql, useLazyQuery } from "@apollo/client";
 import { useRouter } from "next/router";
 import styles from "./requestPage.module.scss";

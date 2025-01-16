@@ -3,14 +3,14 @@ import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import {BackGrid} from "@/src/BackGrid";
 import Button from "@/src/components/Button";
-import {useTranslation} from "next-i18next";
+// import {useTranslation} from "next-i18next";
 import Modal from "@/src/components/modal/Modal";
 import {useModal} from "@/src/components/modal/modalContext";
 
 export default function GridPage() {
-    const { t } = useTranslation("common");
+    // const { t } = useTranslation("common");
     const { openModal } = useModal();
-    const buttonText = t("section.button");
+    // const buttonText = t("section.button");
     return (
         <>
             <Canvas
