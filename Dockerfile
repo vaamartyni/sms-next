@@ -1,23 +1,18 @@
-# Используем официальный образ Node.js
+# Use Node.js LTS as the base image
 FROM node:18-alpine
 
-# Устанавливаем рабочую директорию
-WORKDIR /app
+# Set working directory
+WORKDIR /usr/app
 
-# Копируем package.json и package-lock.json || ENV
+# Install dependencies
 COPY package*.json ./
-
-# Устанавливаем зависимости
 RUN npm install
 
-# Копируем остальные файлы
+# Copy the rest of the application
 COPY . .
 
-# Компилируем Next.js для продакшена
-RUN npm run build
-
-# Экспонируем порт для фронтенда
+# Expose the Next.js default port
 EXPOSE 3000
 
-# Запускаем Next.js
-CMD ["npm", "start"]
+# Build and start during container runtime
+CMD ["sh", "-c", "npm run build && npm start"]
