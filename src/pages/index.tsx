@@ -104,7 +104,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
     const variables = {
         locale: locale || "en",
-        pagination: { limit: -1 },
+        pagination: { limit: 100 },
     };
 
     try {
