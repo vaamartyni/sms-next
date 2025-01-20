@@ -56,7 +56,7 @@ interface ClientResponse {
 
 // Fetch paths for all client slugs
 export const getStaticPaths: GetStaticPaths = async () => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
     const locales = ["en", "ru"];
     const paths: { params: { slug: string }; locale: string }[] = [];
@@ -80,7 +80,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // Fetch data for a specific client
 export const getStaticProps: GetStaticProps<{ clientData: Client }> = async ({ params, locale }) => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     try {

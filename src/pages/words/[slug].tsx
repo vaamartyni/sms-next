@@ -27,7 +27,7 @@ interface WordPageProps {
 
 // Fetch all slugs for static paths
 export const getStaticPaths: GetStaticPaths = async () => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     const query = `
@@ -54,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // Fetch individual word data for static props
 export const getStaticProps: GetStaticProps<WordPageProps> = async ({ params, locale }) => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     const query = `

@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 
 // Fetch global SSG data (socialLinks + copyright)
 const fetchGlobalData = async (locale: string): Promise<GlobalData> => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     const query = `

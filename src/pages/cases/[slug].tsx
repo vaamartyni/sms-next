@@ -39,7 +39,7 @@ const GET_ALL_SLUGS = `
 
 // Fetch specific case by slug via `getStaticProps`
 export const getStaticProps: GetStaticProps<{ caseData: Case }> = async ({ params, locale }) => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     try {
@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps<{ caseData: Case }> = async ({ param
 
 // Generate paths for all slugs via `getStaticPaths`
 export const getStaticPaths: GetStaticPaths = async () => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
     const locales = ["en", "ru"]; // Available locales
     const paths: { params: { slug: string }; locale: string }[] = [];

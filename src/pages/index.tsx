@@ -38,7 +38,7 @@ interface HeroResponse {
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-    const endpoint = process.env.GRAPHQL_API_URL || "http://localhost:1337/graphql";
+    const endpoint = `${process.env.API_CONTAINER_URL || "http://strapi:1337"}/graphql`;
     const client = new GraphQLClient(endpoint);
 
     const query = `
